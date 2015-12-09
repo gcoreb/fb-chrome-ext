@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="bootstrap@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script src="popup.js"></script>
+       <style>
+      body {
+        max-width: 600px;
+      }
+      #container #content {
+    display: none;
+}
+#container:target #content {
+    display: block;
+}
+#container:target a {
+    display: none;
+}
+
+      
+    </style>
+  </head>
+
+  <body>
+    <button id='one' class='btn btn-default'>1 LOL</button>
+    <hr/>
+    <div class='jumbotron' id='container'>
+    <a href='#container'>Instructions: </a>
+    <div id='content'>    <h1>Setup:</h1>
+In content.js, replace [ var boxID = document.getElementById("u_0_t"); ] this line with the correct ID. Right click the reply button in fb.com/messages to inspect and copy paste ID. Reload to use.
+</div>
+  </div>
+    <!--<button class='btn btn-primary'>2 sigh</button>
+    <button class='btn btn-success'>3 :)</button>
+    <button class='btn btn-danger'>4 wait</button>
+    <button class='btn btn-info'>5 yeah</button>
+    <button class='btn btn-warning'>6 :(</button>!-->
+
+  </body>
+
+</html>

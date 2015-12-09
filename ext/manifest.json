@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chat",
+  "description": "This extension auto-chats. Learning project by Bryan.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+  "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+   }
+    ],
+    "permissions": [
+    "tabs",
+    "https://www.facebook.com/"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    }
+}
